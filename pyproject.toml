@@ -1,0 +1,12 @@
+[project]
+name = "delta-lm"
+version = "0.1.0"
+description = "A small hybrid delta-attention language model with latent MoE and attention residuals, in MLX"
+requires-python = ">=3.10"
+dependencies = ["mlx>=0.22", "numpy"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
